@@ -27,11 +27,11 @@ jobs:
 
       - name: Syntax check
         run: |
-          python -m compileall practice/webhealth
+          python -m compileall .
 
       - name: Build Docker image
         run: |
-          docker build -t website-health-api practice/webhealth
+          docker build -t website-health-api .
 
       - name: Run container and test API
         run: |
