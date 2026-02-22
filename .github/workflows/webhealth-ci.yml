@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t website-health-api .
+          docker build -t website-health-api -f app/dockerfile .
 
       - name: Run container and test API
         run: |
