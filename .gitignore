@@ -1,0 +1,24 @@
+#terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
+
+#terraform secrets
+terraform/terraform.tfvars
+*.tfvars
+*.auto.tfvars
+terraform.tfvars
+
+#python
+__pycache__/
+*.pyc
+
+#Virtual environment
+venv/
+.env/
+
+# os 
+.DS_Store
+Thumbs.db
