@@ -11,8 +11,8 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-  defaults:
-     run:
+    defaults:
+      run:
         working-directory: app
 
     steps:
