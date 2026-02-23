@@ -11,6 +11,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+  defaults:
+     run:
+        working-directory: app
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,7 +35,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t website-health-api -f app/dockerfile .
+          docker build -t website-health-api .
 
       - name: Run container and test API
         run: |
